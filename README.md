@@ -1,8 +1,8 @@
-# 🥚 EggShell (egg)
+# 🥚 EggTimer (egg)
 
 A minimalist, non-blocking terminal timer built for Linux power users. 
 
-**EggShell** allows you to set timers directly from your CLI. It runs in the background, keeping your terminal usable, and triggers a system-native notification and audio alert when time is up.
+**EggTimer** allows you to set timers directly from your CLI. It runs in the background, keeping your terminal usable, and triggers a system-native notification and audio alert when time is up.
 
 ---
 
