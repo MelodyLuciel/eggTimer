@@ -1,16 +1,44 @@
-# 🥚 EggTimer-CLI
+# 🥚 EggShell (egg)
 
-A minimalist, non-blocking terminal timer for Arch Linux. Built for power users who live in the terminal and need a "set it and forget it" focus tool.
+A minimalist, non-blocking terminal timer built for Linux power users. 
+
+**EggShell** allows you to set timers directly from your CLI. It runs in the background, keeping your terminal usable, and triggers a system-native notification and audio alert when time is up.
+
+---
 
 ## ✨ Features
-* **Non-Blocking:** Uses background execution so your terminal remains usable.
-* **System Integrated:** Sends native desktop notifications via `notify-send`.
-* **Audible Alerts:** Plays a system sound when the timer expires.
-* **Lightweight:** Written in pure Python with zero heavy dependencies.
+* **Zero UI Overload:** Stays out of your way until you need it.
+* **Non-Blocking:** Built to be run as a background process.
+* **Desktop Integrated:** Uses `libnotify` for standard Linux desktop alerts.
+* **Audio Feedback:** Triggers a system alert sound for heads-up notification.
+* **Python Powered:** Lightweight with no heavy dependencies.
 
-## 🚀 Installation
+## 🚀 Installation (The Arch Way)
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/EggTimer-CLI.git](https://github.com/YOUR_USERNAME/EggTimer-CLI.git)
-   cd EggTimer-CLI
+   git clone [https://github.com/YOUR_USERNAME/egg-shell.git](https://github.com/YOUR_USERNAME/egg-shell.git)
+   cd egg-shell
+
+2. **Make it Executable:**
+   ```bash
+   chmod +x egg.py
+3. **Move it to your PATH:**
+   ```bash
+   sudo mv egg.py /usr/local/bin/egg
+
+## 🛠️ Usage
+* Set a timer in your terminal of choice
+  ```bash
+  egg 5 &
+* Use decimals for seconds
+  ```bash
+  egg 0.30 &
+
+## 📦 Dependencies
+
+* python3
+* libnotify (For notifications)
+* pulseaudio or pipewire-pulse (for sound playback)
+
+### Created with ❤️
