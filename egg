@@ -1,0 +1,28 @@
+#!/usr/bin/env python3
+import time
+import sys
+import subprocess # A cleaner way to run system commands than os.system
+
+def set_timer():
+    try:
+        minutes = float(sys.argv[1])
+        seconds = int(minutes * 60)
+        
+        # This print tells you the background process started
+        print(f"Timer set for {minutes} minutes. See you then!")
+        
+        time.sleep(seconds)
+        
+        # 1. Send Notification
+        subprocess.run(['notify-send', 'Egg Timer', 'Time is up!'])
+        
+        # 2. Play Sound (adjust path if needed, or use 'beep')
+        # This uses a common system sound path
+        subprocess.run(['paplay', '/usr/share/sounds/freedesktop/stereo/complete.oga'])
+        
+    except Exception as e:
+        print(f"Error: {e}")
+        print("Usage: egg [minutes]")
+
+if __name__ == "__main__":
+    set_timer()
