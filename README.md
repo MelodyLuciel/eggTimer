@@ -37,8 +37,8 @@ A minimalist, non-blocking terminal timer built for Linux power users.
 
 ## 📦 Dependencies
 
-* python3
-* libnotify (For notifications)
-* pulseaudio or pipewire-pulse (for sound playback)
+* `python3`
+* `libnotify` (For notifications)
+* `pulseaudio` or `pipewire-pulse` (for sound playback)
 
 ### Created with ❤️
