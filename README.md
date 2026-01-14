@@ -17,8 +17,8 @@ A minimalist, non-blocking terminal timer built for Linux power users.
 
 1. **Clone the repo:**
    ```bash
-   git clone [https://github.com/YOUR_USERNAME/egg-shell.git](https://github.com/YOUR_USERNAME/egg-shell.git)
-   cd egg-shell
+   git clone https://github.com/MelodyLuciel/eggTimer.git
+   cd eggTimer
 
 2. **Make it Executable:**
    ```bash
